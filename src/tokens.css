@@ -1,0 +1,66 @@
+/* Design Tokens — Light mode (default) */
+:root {
+  /* Brand */
+  --color-brand-default:    #f97316;  /* orange/500 */
+  --color-brand-hover:      #ea6c0c;  /* orange/600 */
+  --color-brand-active:     #c25208;  /* orange/700 */
+  --color-brand-subtle:     #fff7ed;  /* orange/50  */
+  --color-brand-text:       #ffffff;  /* white       */
+  --color-brand-on-subtle:  #c25208;  /* orange/700  */
+
+  /* Text */
+  --color-text-primary:     #0f172a;  /* slate/900 */
+  --color-text-secondary:   #475569;  /* slate/600 */
+  --color-text-tertiary:    #94a3b8;  /* slate/400 */
+  --color-text-inverse:     #ffffff;
+  --color-text-disabled:    #cbd5e1;  /* slate/300 */
+
+  /* Background */
+  --color-bg-primary:       #ffffff;
+  --color-bg-secondary:     #f8fafc;  /* slate/50  */
+  --color-bg-tertiary:      #f1f5f9;  /* slate/100 */
+  --color-bg-inverse:       #0f172a;  /* slate/900 */
+
+  /* Border */
+  --color-border-default:   #e2e8f0;  /* slate/200 */
+  --color-border-strong:    #94a3b8;  /* slate/400 */
+  --color-border-focus:     #f97316;  /* orange/500 */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-brand-default:    #fb923c;  /* orange/400 */
+    --color-brand-hover:      #fdba74;  /* orange/300 */
+    --color-brand-active:     #fed7aa;  /* orange/200 */
+    --color-brand-subtle:     #431407;  /* orange/950 */
+    --color-brand-text:       #0f172a;  /* slate/900 */
+    --color-brand-on-subtle:  #fdba74;  /* orange/300 */
+
+    --color-text-primary:     #f8fafc;  /* slate/50  */
+    --color-text-secondary:   #cbd5e1;  /* slate/300 */
+    --color-text-tertiary:    #64748b;  /* slate/500 */
+    --color-text-inverse:     #0f172a;
+    --color-text-disabled:    #475569;  /* slate/600 */
+
+    --color-bg-primary:       #0f172a;  /* slate/900 */
+    --color-bg-secondary:     #1e293b;  /* slate/800 */
+    --color-bg-tertiary:      #334155;  /* slate/700 */
+    --color-bg-inverse:       #ffffff;
+
+    --color-border-default:   #334155;  /* slate/700 */
+    --color-border-strong:    #64748b;  /* slate/500 */
+    --color-border-focus:     #fb923c;  /* orange/400 */
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
