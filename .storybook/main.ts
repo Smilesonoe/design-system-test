@@ -1,17 +1,16 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
-  "stories": [
+  stories: [
     "../components/**/*.mdx",
-    "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../components/**/*.stories.{js,jsx,mjs,ts,tsx}",
   ],
-  "addons": [
-    "@chromatic-com/storybook",
-    "@storybook/addon-vitest",
-    "@storybook/addon-a11y",
+  addons: [
     "@storybook/addon-docs",
-    "@storybook/addon-onboarding"
+    "@storybook/addon-a11y",
+    "@chromatic-com/storybook",
   ],
-  "framework": "@storybook/react-vite"
+  framework: "@storybook/react-vite",
 };
+
 export default config;
